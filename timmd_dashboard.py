@@ -246,7 +246,7 @@ plotly_config = {'modeBarButtonsToRemove':['toImage', 'select', 'autoScale', 'la
     
 # Dash App
 
-app = Dash()
+app = Dash(__name__)
 server = app.server
 
 
