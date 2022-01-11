@@ -1,1 +1,1 @@
-web: gunicorn timmd_dashboard.py:server
+web: gunicorn timmd_dashboard:server

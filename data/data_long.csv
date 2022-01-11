@@ -1,0 +1,69 @@
+,Pais,Continente,TipoSatelite,Cantidad,Peso,Instrumentos,Peso Promedio
+0,Argentina,America del Sur,GEO,2,5873.0,50,2936.5
+1,Brasil,America del Sur,GEO,24,100666.0,1031,4194.41666666667
+2,Bolivia,America del Sur,GEO,1,5100.0,30,5100.0
+3,Chile,America del Sur,GEO,0,0.0,0,0.0
+4,Colombia,America del Sur,GEO,0,0.0,0,0.0
+5,Ecuador,America del Sur,GEO,0,0.0,0,0.0
+6,Paraguay,America del Sur,GEO,0,0.0,0,0.0
+7,Perú,America del Sur,GEO,0,0.0,0,0.0
+8,Uruguay,America del Sur,GEO,0,0.0,0,0.0
+9,Venezuela,America del Sur,GEO,1,5050.0,28,5050.0
+10,México,Resto America,GEO,11,36947.0,420,3358.81818181818
+11,Turquía,Europa,GEO,6,19883.0,36,3313.83333333333
+12,Costa Rica,Resto America,GEO,0,0.0,0,0.0
+13,Sudáfrica,Africa,GEO,0,0.0,0,0.0
+14,Arabia Saudita,Asia Central,GEO,10,29330.0,335,2933.0
+15,Tailandia,Asia,GEO,7,20199.0,251,2885.57142857143
+16,Bulgaria,Europa,GEO,1,,33,
+17,Egipto,Africa,GEO,3,5027.0,0,1675.66666666667
+18,Grecia,Europa,GEO,3,15575.0,170,5191.66666666667
+19,Indonesia ,Asia,GEO,17,40231.0,616,2366.52941176471
+20,Irán,Asia Central,GEO,0,0.0,0,0.0
+21,Kazajistán,Asia Central,GEO,3,4164.0,60,1388.0
+22,Ucrania,Europa,GEO,0,0.0,0,0.0
+23,Nigeria,Africa,GEO,2,10300.0,68,5150.0
+24,Guatemala,Resto America,GEO,0,0.0,0,0.0
+25,Vietnam,Asia,GEO,2,5606.0,44,2803.0
+26,Corea del Sur,Asia,GEO,9,28775.0,299,3197.22222222222
+27,Malasia,Asia,GEO,3,13029.0,120,4343.0
+28,Filipinas,Asia,GEO,1,3775.0,215,3775.0
+29,Singapur,Asia,GEO,4,21576.0,0,5394.0
+30,Argelia,Africa,GEO,1,5225.0,33,5225.0
+31,Emiratos Árabes Unidos,Asia Central,GEO,6,31322.0,548,5220.33333333333
+32,Israel,Asia Central,GEO,6,16303.0,98,2717.16666666667
+33,Canadá,Resto America,GEO,21,60895.0,775,2899.7619047619
+34,Argentina,America del Sur,LEO,6,8344.0,28,1390.66666666667
+35,Brasil,America del Sur,LEO,9,8742.0,31,971.333333333333
+36,Bolivia,America del Sur,LEO,0,0.0,0,0.0
+37,Chile,America del Sur,LEO,3,182.0,6,60.6666666666667
+38,Colombia,America del Sur,LEO,2,3.0,4,1.5
+39,Ecuador,America del Sur,LEO,4,7.4,4,1.85
+40,Paraguay,America del Sur,LEO,1,1.3,1,1.3
+41,Perú,America del Sur,LEO,4,403.71,6,100.9275
+42,Uruguay,America del Sur,LEO,1,2.0,3,2.0
+43,Venezuela,America del Sur,LEO,2,1880.0,6,940.0
+44,México,Resto America,LEO,2,10.7,2,5.35
+45,Turquía,Europa,LEO,4,1469.0,16,367.25
+46,Costa Rica,Resto America,LEO,1,1.0,1,1.0
+47,Sudáfrica,Africa,LEO,5,,17,
+48,Arabia Saudita,Asia Central,LEO,8,,19,
+49,Tailandia,Asia,LEO,2,806.3,5,403.15
+50,Bulgaria,Europa,LEO,1,,2,
+51,Egipto,Africa,LEO,5,2212.0,7,442.4
+52,Grecia,Europa,LEO,3,5.0,3,1.66666666666667
+53,Indonesia ,Asia,LEO,3,239.0,21,79.6666666666667
+54,Irán,Asia Central,LEO,6,307.0,4,51.1666666666667
+55,Kazajistán,Asia Central,LEO,3,997.0,9,332.333333333333
+56,Ucrania,Europa,LEO,5,8584.0,30,1716.8
+57,Nigeria,Africa,LEO,3,500.0,3,166.666666666667
+58,Guatemala,Resto America,LEO,1,1.0,1,1.0
+59,Vietnam,Asia,LEO,3,165.0,3,55.0
+60,Corea del Sur,Asia,LEO,6,5167.0,10,861.166666666667
+61,Malasia,Asia,LEO,1,200.0,1,200.0
+62,Filipinas,Asia,LEO,1,50.0,4,50.0
+63,Singapur,Asia,LEO,4,706.0,7,176.5
+64,Argelia,Africa,LEO,4,419.0,4,104.75
+65,Emiratos Árabes Unidos,Asia Central,LEO,0,0.0,0,0.0
+66,Israel,Asia Central,LEO,3,864.0,3,288.0
+67,Canadá,Resto America,LEO,6,9840.0,16,1640.0

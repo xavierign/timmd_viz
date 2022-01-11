@@ -6,14 +6,14 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 
 # Datasets
-data_escala = pd.read_excel("data/data_escala.xlsx", index_col=0)
-data_long = pd.read_excel("data/dataset_long.xlsx", index_col=0)
-data_ext = pd.read_excel("data/UCS-Satellite-Database-9-1-2021.xls")
+data_escala = pd.read_excel("data/data_escala.csv", index_col=0)
+data_long = pd.read_excel("data/data_long.csv", index_col=0)
+data_ext = pd.read_excel("data/data_ext.csv")
 
 data_long["InstrumentosPromCant"] = data_long["Instrumentos"]/data_long["Cantidad"]
 data_long["InstrumentosPromPeso"] = data_long["Instrumentos"]/data_long["Peso"]
 
-data_ext = data_ext.iloc[0:4550,:35]
+#data_ext = data_ext.iloc[0:4550,:35]
 data_ext = data_ext[['Class of Orbit', 'Perigee (km)', 'Apogee (km)','Launch Mass (kg.)', 'Dry Mass (kg.)']]
 
 # Gráficos
