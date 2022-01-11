@@ -6,9 +6,9 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 
 # Datasets
-data_escala = pd.read_excel("data/data_escala.csv", index_col=0)
-data_long = pd.read_excel("data/data_long.csv", index_col=0)
-data_ext = pd.read_excel("data/data_ext.csv")
+data_escala = pd.read_csv("data/data_escala.csv", index_col=0)
+data_long = pd.read_csv("data/data_long.csv", index_col=0)
+data_ext = pd.read_csv("data/data_ext.csv")
 
 data_long["InstrumentosPromCant"] = data_long["Instrumentos"]/data_long["Cantidad"]
 data_long["InstrumentosPromPeso"] = data_long["Instrumentos"]/data_long["Peso"]
