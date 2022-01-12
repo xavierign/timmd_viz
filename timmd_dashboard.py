@@ -247,9 +247,9 @@ plotly_config = {'modeBarButtonsToRemove':['toImage', 'select', 'autoScale', 'la
 # Dash App
 
 app = Dash(__name__)
-server = app.server
 app.title = 'TIMMD - Viz'
-app._favicon = ("data/satellite_icon.png")
+app._favicon = ("satellite_icon.png")
+server = app.server
 
 
 # App Layout
