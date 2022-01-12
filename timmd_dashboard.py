@@ -248,6 +248,8 @@ plotly_config = {'modeBarButtonsToRemove':['toImage', 'select', 'autoScale', 'la
 
 app = Dash(__name__)
 server = app.server
+app.title = 'TIMMD - Viz'
+app._favicon = ("data/satellite_icon.png")
 
 
 # App Layout
@@ -377,7 +379,7 @@ app.layout = dbc.Container([
                  dcc.Markdown('''
                               Finalmente podemos analizar la escala *Space Technology Ladder* (STL) para observar cómo fue el desarrollo de los países incluídos en este trabajo en dicho sistema de hitos en tecnología espacial. Esta escala comienza en el punto 1 con la creación de una agencia espacial y termina en el escalón 13, indicando que el país tiene capacidad de lanzamiento de un satélite GEO.
                               
-                              No necesariamente un país debe pasar por todos los escalones, podemos analizar también por cuántos escalones ha pasado para llegar al estado actual. Es importante destacar que esta escala no considera la complejidad de los satélites construidos ni las tecnologías utilizadas.
+                              No necesariamente un país debe pasar por todos los escalones, podemos analizar también por cuántos escalones ha pasado para llegar al estado actual. Es importante aclarar que esta escala no considera la complejidad de los satélites construidos ni las tecnologías utilizadas.
                               
                               Podemos destacar a Argentina e Israel teniendo el escalón máximo entre los países analizados, estando en el número 11 indicando capacidad de desarrollo y construcción local de un satélite GEO.
                               ''')
