@@ -286,6 +286,7 @@ app.layout = dbc.Container([
                                        'value':'Instrumentos'}],
                              value='Cantidad',
                              clearable=False,
+                             searchable=False,
                              style={'margin-bottom':'0px'},
                              className='dropdown_style'),
                 dcc.Graph(id='treemap1',
@@ -308,6 +309,7 @@ app.layout = dbc.Container([
                                    'value':'GEO'}],
                          value='LEO',
                          clearable=False,
+                         searchable=False,
                          className='dropdown_style'),
             dcc.Graph(id='scatter1',
                       figure=plotScatter1('LEO'),
@@ -364,7 +366,8 @@ app.layout = dbc.Container([
                                    'value':'GEO'}],
                          value='LEO',
                          clearable=False,
-                             className='dropdown_style'),
+                         searchable=False,
+                         className='dropdown_style'),
             dcc.Graph(id='scatter2',
                       figure=plotScatter2('LEO'),
                       config=plotly_config)],
@@ -396,6 +399,7 @@ app.layout = dbc.Container([
                                          'value':'PesoTotal'}],
                              value='Total satélites',
                              clearable=False,
+                             searchable=False,
                              className='dropdown_style'),
                 width = 3),
         dbc.Col(dcc.Dropdown(id='dw_scatter3_2',
@@ -405,6 +409,7 @@ app.layout = dbc.Container([
                                          'value':'Cantidad de Escalones'}],
                              value='Escalón más alto',
                              clearable=False,
+                             searchable=False,
                              className='dropdown_style'),
                 width = 3),
         dbc.Col(dcc.Dropdown(id='dw_scatter3_3',
@@ -416,6 +421,7 @@ app.layout = dbc.Container([
                                          'value':'PesoTotal'}],
                              value='PesoTotal',
                              clearable=False,
+                             searchable=False,
                              className='dropdown_style'),
                 width = 3),
         dbc.Col(dcc.Dropdown(id='dw_scatter3_4',
@@ -425,18 +431,9 @@ app.layout = dbc.Container([
                                          'value':'Log'}],
                              value='Linear',
                              clearable=False,
+                             searchable=False,
                              className='dropdown_style'),                
                 width = 3)
-        # dbc.Col(html.Button('Log Scale',
-        #                     id='bt_scatter3',
-        #                     n_clicks = 0),
-        # dbc.Col(dcc.RadioItems(id='ri_scatter3',
-        #                        options = [{'label':'X Linear',
-        #                                    'value':'Linear'},
-        #                                   {'label':'X Log',
-        #                                    'value':'Log'}],
-        #                        value='Linear',
-        #                        className='radio-item'),
 
     ]),
     
@@ -523,7 +520,7 @@ def updateScatter3(selection1, selection2, selection3, log_selection):
 
 # Run app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 
 
