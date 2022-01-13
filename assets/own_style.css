@@ -22,6 +22,32 @@ h2 {
   padding-bottom: 15px;
 }
 
+.header_font {
+  font-size: 25px;
+  font-family: 'Be Vietnam Pro', monospace;
+  font-weight: 800;
+  color: white;
+}
+
+.footer_font {
+  font-size: 18px;
+  font-family: 'Be Vietnam Pro', monospace;
+  font-weight: 600;
+  color: white;
+}
+
+.footer_style, .header_style {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  background-color: #313640;
+}
+
+.row_style {
+  padding-left: 80px;
+  padding-right: 80px
+}
+
 .dropdown_style {
   font-size: 15.5px;
 }

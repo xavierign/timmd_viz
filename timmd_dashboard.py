@@ -257,21 +257,32 @@ app._favicon = ("satellite_icon.png")
 app.layout = dbc.Container([
     
     dbc.Row([
+       dbc.Col("TIMMD",
+               width = {'size':2, 'offset':1},
+               className = 'header_font'),
+       dbc.Col("92.16",
+               width = {'size':2, 'offset':7},
+               className = 'header_font')
+    ], className = 'header_style'),
+    #html.Header("TIMMD - 92.16"),
+        
+    dbc.Row([
         dbc.Col([
             # Título general.
             html.H1("Desarrollo de Tecnología Espacial - Argentina",
-                    style = {'text-align':'center'}),
+                    style = {'text-align':'center',
+                             'margin-top':'30px'}),
             # Párrafo de introducción.
             html.P("El desarrollo de tecnologías espaciales se encuentra en un gran auge este último tiempo. Los desarrollos actuales son producto de años de inversión e investigación en el sector. Argentina tiene una gran historia e importancia cuando analizamos países de características similiares incluyendo los de su región."),
             #html.Br(),
             html.P("Presentamos algunas visualizaciones que pueden ayudarnos a entender cómo es la dinámica del sector. También es importante entender que los distintos hitos en cuanto a la industria espacial que pueden llevar a cabo los países dependen de su inversión en el sector y estrategias específicas.")
             ],
             width = 12)
-        ]),
+        ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col(html.H2("Distribución de Satélites"))
-        ]),
+        ], className = 'row_style'),
     
     dbc.Row([
        dbc.Col([dcc.Markdown("Con el siguiente gráfico podemos ver la distribución de los satélites en cada región analizada. Observando **cantidad**, **peso** y **número de instrumentos** destacamos la importancia de América Latina comparada con el resto de las regiones."),
@@ -294,11 +305,11 @@ app.layout = dbc.Container([
                           config={'modeBarButtonsToRemove':['toImage'],
                                   'displaylogo':False})],
                width=8) 
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col(html.H2("LEO vs GEO"))
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col([
@@ -317,7 +328,7 @@ app.layout = dbc.Container([
                 width = 8),
         dbc.Col([dcc.Markdown(id='mkdw_1')],
                 width = 4)
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
        dbc.Col([dcc.Markdown('''
@@ -341,11 +352,11 @@ app.layout = dbc.Container([
                           figure = plotViolin([]),
                           config = plotly_config)],
                width = {'size':8, 'order':2}) 
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col(html.H2("Rendimiento"))
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col(
@@ -372,7 +383,7 @@ app.layout = dbc.Container([
                       figure=plotScatter2('LEO'),
                       config=plotly_config)],
                 width = 8)
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col([dcc.Markdown('''
@@ -387,7 +398,7 @@ app.layout = dbc.Container([
                               Podemos destacar a Argentina e Israel teniendo el escalón máximo entre los países analizados, estando en el número 11 indicando capacidad de desarrollo y construcción local de un satélite GEO.
                               ''')
         ])
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col(dcc.Dropdown(id='dw_scatter3_1',
@@ -435,19 +446,24 @@ app.layout = dbc.Container([
                              className='dropdown_style'),                
                 width = 3)
 
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col(dcc.Graph(id='scatter3',
                           figure=plotScatter3('Total satélites', 'Escalón más alto', 'PesoTotal', 'Linear'),
                           config=plotly_config))
-    ]),
+    ], className = 'row_style'),
     
     dbc.Row([
-        dbc.Col()
-    ])
+       dbc.Col("Juan Cruz Camacho",
+               width = {'size':3, 'offset':1},
+               className = 'footer_font'),
+       dbc.Col("JuanCruzC97",
+               width = {'size':3, 'offset':5},
+               className = 'footer_font')
+    ], className = 'footer_style', style = {'margin-top':'30px'})
     
-])
+], fluid = True)
 
 # Callbacks
 # Callback para el Dropdown del Treemap.
