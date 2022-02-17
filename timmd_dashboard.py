@@ -269,7 +269,7 @@ app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([
             # Título general.
-            html.H1("Desarrollo de Tecnología Espacial - Argentina",
+            html.H1("Desarrollo de la Industria Espacial Sudamericana",
                     style = {'text-align':'center',
                              'margin-top':'30px'}),
             # Párrafo de introducción.
@@ -454,6 +454,22 @@ app.layout = dbc.Container([
                           config=plotly_config))
     ], className = 'row_style'),
     
+        
+    dbc.Row([
+       dbc.Col("Proyecto: Desarrollo y Complementariedad Tecnológica y Productiva de la Industria Espacial Sudamericana",
+               width = {'size':12, 'offset':0},
+               className = 'project_data_font',
+               style = {'font-size':'16px',
+                        'margin-bottom':'10px'}),
+       dbc.Col("Director: Paulo Pascuini (Economista) FCE-UBA / IIEP-BAIRES (UBA-CONICET)",
+               width = {'size':12, 'offset':0},
+               className = 'project_data_font'),
+       dbc.Col("Co-Director: Xavier Ignacio González FIUBA / INSDIN",
+               width = {'size':12, 'offset':0},
+               className = 'project_data_font'),
+       
+       ], className = 'project_data_style', style = {'margin-top':'20px'}),
+    
     dbc.Row([
        dbc.Col("Juan Cruz Camacho",
                width = {'size':3, 'offset':1},
@@ -461,7 +477,8 @@ app.layout = dbc.Container([
        dbc.Col("JuanCruzC97",
                width = {'size':3, 'offset':5},
                className = 'footer_font')
-    ], className = 'footer_style', style = {'margin-top':'30px'})
+    ], className = 'footer_style', style = {'margin-top':'0px'})
+
     
 ], fluid = True)
 
@@ -536,7 +553,7 @@ def updateScatter3(selection1, selection2, selection3, log_selection):
 
 # Run app
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
 
 
 

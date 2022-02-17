@@ -43,6 +43,21 @@ h2 {
   background-color: #313640;
 }
 
+.project_data_font {
+  font-size: 14px;
+  font-family: 'Be Vietnam Pro', monospace;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+}
+
+.project_data_style {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  background-color: #D3D3D3;
+}
+
 .row_style {
   padding-left: 80px;
   padding-right: 80px
