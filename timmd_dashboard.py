@@ -324,7 +324,10 @@ app.layout = dbc.Container([
                          className='dropdown_style'),
             dcc.Graph(id='scatter1',
                       figure=plotScatter1('LEO'),
-                      config = plotly_config)],
+                      config = plotly_config),
+            html.P("La cantidad de satélites enviados es representado por el tamaño del punto.",
+                         style = {'font-size':'12px',
+                                  'text-align': 'center'})],
                 width = 8),
         dbc.Col([dcc.Markdown(id='mkdw_1')],
                 width = 4)
@@ -381,7 +384,10 @@ app.layout = dbc.Container([
                          className='dropdown_style'),
             dcc.Graph(id='scatter2',
                       figure=plotScatter2('LEO'),
-                      config=plotly_config)],
+                      config=plotly_config),
+            html.P("La cantidad de satélites enviados es representado por el tamaño del punto.",
+                         style = {'font-size':'12px',
+                                  'text-align': 'center'})],
                 width = 8)
     ], className = 'row_style'),
     
@@ -401,7 +407,10 @@ app.layout = dbc.Container([
     ], className = 'row_style'),
     
     dbc.Row([
-        dbc.Col(dcc.Dropdown(id='dw_scatter3_1',
+        dbc.Col([html.P(html.B("Abscisas"),
+                        style = {'text-align':'center',
+                                 'margin-bottom':'0px'}),
+                 dcc.Dropdown(id='dw_scatter3_1',
                              options = [{'label':'Cantidad de Satélites',
                                          'value':'Total satélites'},
                                         {'label':'Cantidad de Instrumentos',
@@ -411,9 +420,12 @@ app.layout = dbc.Container([
                              value='Total satélites',
                              clearable=False,
                              searchable=False,
-                             className='dropdown_style'),
+                             className='dropdown_style')],
                 width = 3),
-        dbc.Col(dcc.Dropdown(id='dw_scatter3_2',
+        dbc.Col([html.P(html.B("Ordenadas"),
+                        style = {'text-align':'center',
+                                 'margin-bottom':'0px'}),
+                 dcc.Dropdown(id='dw_scatter3_2',
                              options = [{'label':'Escalón Máximo',
                                          'value':'Escalón más alto'},
                                         {'label':'Cantidad de Escalones',
@@ -421,9 +433,12 @@ app.layout = dbc.Container([
                              value='Escalón más alto',
                              clearable=False,
                              searchable=False,
-                             className='dropdown_style'),
+                             className='dropdown_style')],
                 width = 3),
-        dbc.Col(dcc.Dropdown(id='dw_scatter3_3',
+        dbc.Col([html.P(html.B("Tamaño"),
+                        style = {'text-align':'center',
+                                 'margin-bottom':'0px'}),
+                 dcc.Dropdown(id='dw_scatter3_3',
                              options = [{'label':'Cantidad de Satélites',
                                          'value':'Total satélites'},
                                         {'label':'Cantidad de Instrumentos',
@@ -433,9 +448,12 @@ app.layout = dbc.Container([
                              value='PesoTotal',
                              clearable=False,
                              searchable=False,
-                             className='dropdown_style'),
+                             className='dropdown_style')],
                 width = 3),
-        dbc.Col(dcc.Dropdown(id='dw_scatter3_4',
+        dbc.Col([html.P(html.B("Escala Abscisas"),
+                        style = {'text-align':'center',
+                                 'margin-bottom':'0px'}),
+                 dcc.Dropdown(id='dw_scatter3_4',
                              options = [{'label':'Escala Lineal',
                                          'value':'Linear'},
                                         {'label':'Escala Log',
@@ -443,7 +461,7 @@ app.layout = dbc.Container([
                              value='Linear',
                              clearable=False,
                              searchable=False,
-                             className='dropdown_style'),                
+                             className='dropdown_style')],                
                 width = 3)
 
     ], className = 'row_style'),
@@ -552,8 +570,9 @@ def updateScatter3(selection1, selection2, selection3, log_selection):
 
 
 # Run app
+# Activar debug mode cuando trabajo servidor local.
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 
 
