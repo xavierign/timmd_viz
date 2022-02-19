@@ -362,14 +362,17 @@ app.layout = dbc.Container([
     ], className = 'row_style'),
     
     dbc.Row([
-        dbc.Col(
+        dbc.Col([
             dcc.Markdown('''
                          Como medida de rendimiento podemos normalizar tanto la cantidad de instrumentos total y el peso total por la cantidad de satélites enviados. De esta manera, cuanto mayor sea el número de **Instrumentos Promedio** y menor sea el **Peso Promedio** mejor aprovechamiento del equipo enviado.
                          
                          Para satélites **LEO** vemos una menor cantidad de instrumentos por satélite, pero un mayor aprovechamiento de la carga enviada al ser de baja masa. 
                          
                          Por otro lados los satélites **GEO** son más complejos y grandes, por lo que poseen un mayor número de sensores pero una masa considerablemente mayor.
-                         '''),
+                         '''), 
+            dcc.Markdown('''
+                         Es importante destacar que se puede asociar el costo de envío con el peso de la carga enviado al espacio. Igualmente este análisis es limitado porque no considera el nivel de complejidad de los instrumentos enviados ni costos de investigación y desarrollo.
+                         ''')],
             width = 4
         ),
         dbc.Col([
@@ -392,10 +395,7 @@ app.layout = dbc.Container([
     ], className = 'row_style'),
     
     dbc.Row([
-        dbc.Col([dcc.Markdown('''
-                              Es importante destacar que se puede asociar el costo de envío con el peso de la carga enviado al espacio. Igualmente este análisis es limitado porque no considera el nivel de complejidad de los instrumentos enviados ni costos de investigación y desarrollo.
-                              '''),
-                 html.H2("Escala STL"),
+        dbc.Col([html.H2("Escala STL"),
                  dcc.Markdown('''
                               Finalmente podemos analizar la escala *Space Technology Ladder* (STL) para observar cómo fue el desarrollo de los países incluídos en este trabajo en dicho sistema de hitos en tecnología espacial. Esta escala comienza en el punto 1 con la creación de una agencia espacial y termina en el escalón 13, indicando que el país tiene capacidad de lanzamiento de un satélite GEO.
                               
@@ -572,7 +572,7 @@ def updateScatter3(selection1, selection2, selection3, log_selection):
 # Run app
 # Activar debug mode cuando trabajo servidor local.
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
 
 
 
