@@ -5,5 +5,7 @@ Este repositorio contiene el dashboard entregable con visualizaciones sobre el d
 Se puede visitar el sitio en [TIMMD - Viz](https://timmd-viz.herokuapp.com/).
 
 Los datos utilizados en el dashboard pertenecen al proyecto Desarrollo y Complementariedad Tecnológica y Productiva de la Industria Espacial Sudamericana
+
 Director: Paulo Pascuini (Economista) FCE-UBA / IIEP-BAIRES (UBA-CONICET)
+
 Co-Director: Xavier Ignacio González FIUBA / INSDIN
