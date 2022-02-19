@@ -341,8 +341,10 @@ app.layout = dbc.Container([
                              
                              Los satélites en órbita **GEO** presentan una distribución de tamaños más acotada y uniforme, teniendo masas de lanzamiento que rondan generalmente entre los 2.000 y 6.000 kilogramos.
                              ''')],
-               width = {'size':4, 'order':1}),
-       dbc.Col([dcc.Checklist(options=[{'label':'Box',
+               width = {'size':4, 'offset':0}),
+       dbc.Col([html.P("Incluir en el gráfico:",
+                       style = {'display':'inline-block'}),
+                dcc.Checklist(options=[{'label':'Box',
                                         'value':'Box'},
                                        {'label':'Points',
                                         'value':'Points'}],
@@ -350,12 +352,13 @@ app.layout = dbc.Container([
                               id = 'check', 
                               className = 'check_container',
                               labelClassName = 'check_label',
-                              inputClassName = 'check_input'),
+                              inputClassName = 'check_input',
+                              style = {'display':'inline-block'}),
                 dcc.Graph(id='violin',
                           figure = plotViolin([]),
                           config = plotly_config)],
-               width = {'size':8, 'order':2}) 
-    ], className = 'row_style'),
+                width = {'size':8, 'offset':0})
+       ], className = 'row_style'),
     
     dbc.Row([
         dbc.Col(html.H2("Rendimiento"))
@@ -572,7 +575,7 @@ def updateScatter3(selection1, selection2, selection3, log_selection):
 # Run app
 # Activar debug mode cuando trabajo servidor local.
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 
 
